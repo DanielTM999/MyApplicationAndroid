@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="408dp"
+        android:layout_height="419dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.381" />
+
+    <EditText
+        android:id="@+id/User"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:background="@drawable/custom_input_border"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.311" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="168dp"
+        android:layout_height="49dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.911" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/CustomText"
+        android:layout_width="113dp"
+        android:layout_height="42dp"
+        android:text="User"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.141" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/CustomText"
+        android:layout_width="130dp"
+        android:layout_height="32dp"
+        android:text="Senha"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.514" />
+
+    <EditText
+        android:id="@+id/Senha"
+        android:layout_width="350dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:background="@drawable/custom_input_border"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.693" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
